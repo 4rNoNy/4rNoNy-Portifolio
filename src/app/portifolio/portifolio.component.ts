@@ -17,9 +17,10 @@ export class PortifolioComponent implements OnInit {
   typescript: boolean = false;
   angular: boolean = false;
   react: boolean = false;
-  python: boolean = false;
+  aspnet: boolean = false;
   csharp: boolean = false;
-  java: boolean = false;
+  dart: boolean = false;
+  flutter: boolean = false;
 
   filtering: boolean = false;
   constructor(private titleService: Title, private ProjectsService: ProjectsService){
@@ -41,7 +42,7 @@ export class PortifolioComponent implements OnInit {
       filterTags.push(Tag.ANGULAR);
     }
 
-    if (this.python){
+    if (this.aspnet){
       filterTags.push(Tag.PYTON);
     }
 
@@ -49,15 +50,19 @@ export class PortifolioComponent implements OnInit {
       filterTags.push(Tag.CSHARP);
     }
 
-    if (this.java){
-      filterTags.push(Tag.JAVA);
+    if (this.dart){
+      filterTags.push(Tag.DART);
     }
 
     if (this.react){
       filterTags.push(Tag.REACT);
     }
 
-    if (this.python || this.csharp || this.java || this.angular || this.typescript || this.react) {
+    if (this.flutter){
+      filterTags.push(Tag.FLUTTER);
+    }
+
+    if (this.aspnet || this.csharp || this.dart || this.angular || this.typescript || this.react || this.flutter) {
       this.filtering = true;
     }
     else {
@@ -67,13 +72,14 @@ export class PortifolioComponent implements OnInit {
     this.projects = this.ProjectsService.GetProjectsByFilter(filterTags);
   }
   ResetFilters() {
-    this.python = false;
+    this.aspnet = false;
     this.csharp = false;
     this.angular = false;
     this.react = false;
-    this.java = false;
+    this.dart = false;
     this.typescript = false;
     this.filtering = false;
+    this.flutter = false;
 
     this.projects = this.ProjectsService.GetProjects();
   }

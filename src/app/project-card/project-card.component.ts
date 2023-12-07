@@ -8,7 +8,7 @@ import { ProjectModalComponent } from '../project-modal/project-modal.component'
   templateUrl: './project-card.component.html',
   styleUrls: ['./project-card.component.css']
 })
-export class ProjectCardComponent {
+export class ProjectCardComponent  {
   @Input() project = {} as Project;
   bsModalRef?: BsModalRef;
 

@@ -2,7 +2,7 @@
 
     <div class="mb-2">
         <div>
-            <button class="btn btn-outline-primary mb-2 me-2" (click)="isCollapsed = !isCollapsed">Filter</button>
+            <button class="btn btn-outline-primary mb-2 me-2" (click)="isCollapsed = !isCollapsed">{{'portifolioFilter' | translate}}</button>
             <button class="btn btn-outline-secondary mb-2" (click)="ResetFilters()" [hidden]="!filtering">Reset</button>
         </div>
 
@@ -34,19 +34,10 @@
                                 <div class="form-check">
                                     <input type="checkbox" 
                                     class="form-check-input position-static me-2"
-                                    [(ngModel)]="python"
+                                    [(ngModel)]="dart"
                                     (change)="Filter()"
-                                    name="Python">
-                                    <label class="form-check-label small">Python</label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input type="checkbox" 
-                                    class="form-check-input position-static me-2"
-                                    [(ngModel)]="java"
-                                    (change)="Filter()"
-                                    name="Java">
-                                    <label class="form-check-label small">Java</label>
+                                    name="Dart">
+                                    <label class="form-check-label small">Dart</label>
                                 </div>
                             </div>
                         </div>
@@ -70,6 +61,23 @@
                                     (change)="Filter()"
                                     name="React">
                                     <label class="form-check-label small">React</label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input type="checkbox" 
+                                    class="form-check-input position-static me-2"
+                                    [(ngModel)]="flutter"
+                                    (change)="Filter()"
+                                    name="Flutter">
+                                    <label class="form-check-label small">Flutter</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" 
+                                    class="form-check-input position-static me-2"
+                                    [(ngModel)]="aspnet"
+                                    (change)="Filter()"
+                                    name="ASP.NET">
+                                    <label class="form-check-label small">ASP.NET</label>
                                 </div>
                             </div>
                         </div>

@@ -10,9 +10,9 @@
         </div>
     </carousel>
 
-    <h3 class="mt-2">Description</h3>
-    <p>{{project.description}}</p>
-    <p>You can find this project on Github <a href={{project.projectLink}} target="_blank">here</a></p>
+    <h3 class="mt-2">{{'modalDescription' | translate}}</h3>
+    <p>{{project.description | translate}}</p>
+    <p>{{'modalLink' | translate}} <a href={{project.projectLink}} target="_blank">{{'modalHere' | translate}}</a></p>
 
     <hr>
     <div class="d-flex flex-wrap">

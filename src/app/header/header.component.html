@@ -1,4 +1,14 @@
 <div class="jumbotron" style="position: relative;">
+    <div style="position: absolute; top: 5px; right: 10px;">
+    
+        <span class="form-inline">
+            <select name="" class="form-control" #selectedLang (change) ="switchLang(selectedLang.value)" >
+                <option *ngFor="let language of translate.getLangs()" [value]="language" [selected]="language === translate.currentLang">
+                    {{language}}
+                </option>
+            </select>
+        </span>
+    </div>
     <div class="text-center">
         <h1 class="display-4">Arnon Nascimento</h1>
         <h3>Software Engineer</h3>

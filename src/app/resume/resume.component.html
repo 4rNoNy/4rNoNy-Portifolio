@@ -1,5 +1,5 @@
 <div class="container text-center">
-    <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border">Download PDF Resume</button>
+    <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border">{{'resumeBtnDownload' | translate}}</button>
 
     <div class="pb-2">
 
@@ -7,7 +7,7 @@
             <accordion-group [(isOpen)]="isWorkExperienceOpen" >
                 <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
                     <div style="visibility: hidden;">></div>
-                    <div class="btn-link">Work Experience</div>
+                    <div class="btn-link">{{'resumeWorkExp' | translate}}</div>
 
                     <div style="width: 10.95px;">
 
@@ -17,26 +17,15 @@
                 </button>
 
                 <div style="text-align: left;">
-                    <h2 class="mb-0">Software Engineer</h2>
-                    <h3 class="text-primary">sample company</h3>
+                    <h2 class="mb-0">Full Stack Developer intern</h2>
+                    <h3 class="text-primary">Wakke</h3>
                     <ul>
-                        <li>Lorem Ipsum é simplesmente uma simulação de texto da</li>
-                        <li>indústria tipográfica e de impressos, e vem sendo utilizado desde</li>
-                        <li>o século XVI, quando um impressor desconhecido pegou uma</li>
-                        <li>bandeja de tipos e os embaralhou para fazer um livro de modelos</li>
-                        <li>de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como</li>
-                    </ul>
-                </div>
-                <hr>
-                <div style="text-align: left;">
-                    <h2 class="mb-0">Software Engineer jr</h2>
-                    <h3 class="text-primary">sample company</h3>
-                    <ul>
-                        <li>Lorem Ipsum é simplesmente uma simulação de texto da</li>
-                        <li>indústria tipográfica e de impressos, e vem sendo utilizado desde</li>
-                        <li>o século XVI, quando um impressor desconhecido pegou uma</li>
-                        <li>bandeja de tipos e os embaralhou para fazer um livro de modelos</li>
-                        <li>de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como</li>
+                        <li>{{'resumeDateExp' | translate}}</li>
+                        <li>Espirito Santo, Brasil</li>
+                        <li>{{'resumeAssignment1' | translate}}</li>
+                        <li>{{'resumeAssignment2' | translate}}</li>
+                        <li>{{'resumeAssignment3' |translate}}</li>
+                        <li>{{'resumeAssignment4' |translate}}</li>
                     </ul>
                 </div>
     
@@ -46,7 +35,7 @@
 
                 <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
                     <div style="visibility: hidden;">></div>
-                    <div class="btn-link">Education</div>
+                    <div class="btn-link">{{'resumeEducation' | translate}}</div>
 
                     <div style="width: 10.95px;">
 
@@ -59,11 +48,8 @@
                     <h2 class="mb-0">Software Engineer</h2>
                     <h3 class="text-primary">Faculdade Anhanguera</h3>
                     <ul>
-                        <li>Lorem Ipsum é simplesmente uma simulação de texto da</li>
-                        <li>indústria tipográfica e de impressos, e vem sendo utilizado desde</li>
-                        <li>o século XVI, quando um impressor desconhecido pegou uma</li>
-                        <li>bandeja de tipos e os embaralhou para fazer um livro de modelos</li>
-                        <li>de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como</li>
+                        <li>{{'resumeEducation1' | translate}}</li>
+                        <li>{{'resumeEducationDate' | translate}}</li>
                     </ul>
                 </div>
     
@@ -73,7 +59,7 @@
 
                 <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
                     <div style="visibility: hidden;">></div>
-                    <div class="btn-link">Certifications</div>
+                    <div class="btn-link">{{'resumeCertifications' | translate}}</div>
 
                     <div style="width: 10.95px;">
 
@@ -83,15 +69,20 @@
                 </button>
 
                 <div style="text-align: left;">
-                    <h3 class="text-primary">programação WEB</h3>
+                    <h3 class="text-primary">{{'resumeCertifications1' |translate}}</h3>
                     <ul>
-                        <li>Obtainded august 2022</li>
-                        <li>#5202555854</li>
+                        <li>Udemy</li>
+                        <li>{{'resumeCertificationsDate' | translate}}</li>
                     </ul>
-                    <h3 class="text-primary">programação orientada a objeto</h3>
+                    <h3 class="text-primary">{{'resumeCertifications2' | translate}}</h3>
                     <ul>
-                        <li>Obtainded august 2022</li>
-                        <li>#5202555854</li>
+                        <li>DIO</li>
+                        <li>{{'resumeCertificationsDate2' | translate}}</li>
+                    </ul>
+                    <h3 class="text-primary">{{'resumeCertifications3' | translate}}</h3>
+                    <ul>
+                        <li>DIO</li>
+                        <li>{{'resumeCertificationsDate3' | translate}}</li>
                     </ul>
                 </div>
     
@@ -101,7 +92,7 @@
 
                 <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
                     <div style="visibility: hidden;">></div>
-                    <div class="btn-link">Skills</div>
+                    <div class="btn-link">{{'resumeSkills' | translate}}</div>
 
                     <div style="width: 10.95px;">
 
@@ -112,12 +103,12 @@
 
                 <div class="row" style="text-align: left;">
                     <div class="col">
-                        <h3>Programing languages:</h3>
+                        <h3>{{'resumeSkillsLP' | translate}}</h3>
                         <ul>
                             <li>C#</li>
                             <li>TypeScript</li>
                             <li>Python</li>
-                            <li>Java</li>
+                            <li>Dart</li>
                         </ul>
                     </div>
                     <div class="col">
@@ -126,15 +117,15 @@
                             <li>Angular</li>
                             <li>React</li>
                             <li>ASP.NET</li>
-                            <li>Node.JS</li>
+                            <li>Flutter</li>
                         </ul>
                     </div>
                     <div class="col">
-                        <h3>Other Skills:</h3>
+                        <h3>{{'resumeSkillsOS' | translate}}</h3>
                         <ul>
-                            <li>Source Control via Git</li>
-                            <li>MVC Architecture</li>
-                            <li>Agile Development</li>
+                            <li>{{'resumeSkillsSCG' | translate}}</li>
+                            <li>{{'resumeSkillsMVC' | translate}}</li>
+                            <li>{{'resumeSkillsAD' | translate}}</li>
                         </ul>
                     </div>
                 </div>
