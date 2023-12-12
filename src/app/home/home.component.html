@@ -1,26 +1,38 @@
 <div class="container">
     <div class="row">
         <div class="col-lg shadow border m-1">
-            <div class="text-center">
-                <h2>{{ 'homeAboutMe' | translate }}</h2>
-                <img src="../../assets/profile.jpg" alt="profile picture" width="256" height="256" class="rounded-circle">
-                <p>{{ 'homeDescription' | translate }}</p>
+            <div class="row mt-2 ">
+                <div class="col-lg-7 pr-lg-5  aos-init aos-animate mt-4 mb-3 ">
+
+                    <div class="img-wrap mt-4">
+                        <div class="before"></div>
+                        <img src="../../assets/profile.jpg" alt="profile picture" width="256" height="246" class="rounded-circle me-3 border border-3">
+                    </div>
+                </div>
+                <div class="col-lg-5 mt-4">
+                    <div class="section-heading">
+
+                        <h2 class="title">{{ 'homeAboutMe' | translate }}</h2>
+                    </div>
+                    <p class="p">{{ 'homeDescription' | translate }}</p>
+                    <p class="p">{{ 'homeDescription2' | translate }}</p>
+                </div>
             </div>
         </div>
-        <div class="col-lg shadow border m-1">
-            <div class="text-center">
-                <h2>{{ 'homeFeaturedProject' | translate }}</h2>
-                <h4>{{ featuredProject.name | translate }}</h4>
+        <div class="col-lg shadow border m-1" >
+            <div class="text-center mt-4">
+                <h2 class="title">{{ 'homeFeaturedProject' | translate }}</h2>
+                <h4 class="subtitle">{{ featuredProject.name | translate }}</h4>
             </div>
 
             <carousel>
                 <div *ngFor="let picture of featuredProject.pictures">
-                    <slide><img src={{picture}} alt="slide" style="display: block; width: 100%;"></slide>
+                    <slide><img src={{picture}} alt="slide" style="display: block; width: 100%; max-height: 250px; object-fit: cover;"></slide>
                 </div>
             </carousel>
 
-            <p class="mt-2">{{featuredProject.summary | translate}}</p>
-            <p>{{'homeLearnMore' | translate}}</p>
+            <p routerLink="/portifolio" style="cursor:pointer;" class="mt-2 p">{{featuredProject.summary | translate}}</p>
+            <p routerLink="/portifolio" style="cursor:pointer;"  class="p">{{'homeLearnMore' | translate}}</p>
         </div>
     </div>
 </div>

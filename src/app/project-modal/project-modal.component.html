@@ -6,7 +6,7 @@
 <div class="modal-body">
     <carousel>
         <div *ngFor="let picture of project.pictures">
-            <slide><img src={{picture}} alt="slide" style="display: block; width: 100%;"></slide>
+            <slide><img src={{picture}} alt="slide" style="display: block; width: 100%; max-height: 300px"></slide>
         </div>
     </carousel>
 
@@ -15,9 +15,12 @@
     <p>{{'modalLink' | translate}} <a href={{project.projectLink}} target="_blank">{{'modalHere' | translate}}</a></p>
 
     <hr>
-    <div class="d-flex flex-wrap">
+    <div class="d-flex flex-wrap justify-content-center">
         <div *ngFor="let tag of project.tags">
-            <div class="tag me-2 mb-1" [style.background-color]="tag.color">{{tag}}</div>
+            <div class="tag me-2 mb-1" [style.background-color]="tag.color">
+                <img src="{{tag.iconPath}}" alt="{{tag.toString()}} Icon" class="tag-icon">
+                {{tag}}
+            </div>
         </div>
     </div>
 </div>

@@ -1,4 +1,38 @@
 .jumbotron {
     padding: 2rem 1rem;
-    background-color: #e9ecef;
+    background: linear-gradient(45deg,  #766dff, #084177, #687466, #88f3ff);
+    position: relative;
+    background-size: 300% 300%;
+    animation: colors 15s ease infinite;
+}
+.text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    color: #fff;
+    border: 3px solid #fff;
+    padding: 1rem 1rem;
+    margin-left: 25rem;
+    margin-right: 25rem;
+}
+.subTitle{
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+.icon {
+    filter: grayscale(100%) invert(100%);
+}
+
+@keyframes colors{
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }

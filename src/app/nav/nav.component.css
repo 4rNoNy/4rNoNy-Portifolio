@@ -1,0 +1,13 @@
+.nav-hover:hover {
+    color: #81a5f8 !important;
+    transform: scale(1.08);
+    
+}
+.selected{
+    color: #81a5f8 !important;
+    transform: scale(1.08);
+}
+.text-navbar{
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
