@@ -18,7 +18,7 @@ button {
    }
    
    button:hover:not(:disabled) {
-    background: #9ab5f5;
+    background: linear-gradient(-45deg, #88f3ff 0%, #766dff 100% );
     color: white;
     text-shadow: 0 0.1rem #bcb4b4;
    }
@@ -27,3 +27,7 @@ button {
     cursor: auto;
     color: grey;
    }
+   .back-color{
+    background-color: #f6f6f6;
+    border-radius: 10px
+}

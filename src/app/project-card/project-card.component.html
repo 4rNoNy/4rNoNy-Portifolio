@@ -1,17 +1,19 @@
-<div class="card shadow text-center" style="max-width: 350px; min-width: 350px;">
-    <div class="card-body">
-        <h5 class="card-title">{{project.name | translate }}</h5>
-        <p class="card-text card-sub ">{{project.summary | translate }}</p>
-        <button class="" (click)="OpenProjectModal()"><span>{{"cardViewMore" | translate}}</span></button>
-    </div>
-    <div class="card-footer">
-        <div class="d-flex flex-wrap justify-content-center">
+<div class="card" >
+    <div class="content">
+        <p class="heading">{{project.name | translate }}</p>
+        <p class="para">{{project.summary | translate }}</p>
+        <div class="d-flex flex-wrap justify-content-center ">
             <div *ngFor="let tag of project.tags">
-                <div class="tag me-2 mb-1" [style.background-color]="tag.color">
-                    <img src="{{tag.iconPath}}" alt="{{tag.toString()}} Icon" class="tag-icon">
-                    {{tag}}
+                <div class="tag-tec me-2 mb-1 social-media" >
+                    <a >
+                        <img src="{{tag.iconPath}}" alt="{{tag.toString()}} Icon" class="tag-icon">
+                        <span class="tooltip-social">{{tag}}</span>
+
+                    </a>
                 </div>
             </div>
         </div>
+        <button class="btn" (click)="OpenProjectModal()"><span>{{"cardViewMore" | translate}}</span></button>
     </div>
 </div>
+

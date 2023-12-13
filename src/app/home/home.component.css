@@ -10,8 +10,14 @@
 .subtitle{
         color: black;
 }
+.img-perfil{
+    position: absolute;
+}
+.back-color{
+    background-color: #f6f6f6;
+    border-radius: 10px
+}
 .before {
-    z-index: -1;
     -webkit-transform: translate(40%, -20%);
     -ms-transform: translate(40%, -20%);
     transform: translate(40%, -20%);

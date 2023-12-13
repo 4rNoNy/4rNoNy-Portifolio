@@ -1,26 +1,32 @@
-<div class="modal-header">
-    <h2>{{project.name}}</h2>
-    <button class="btn-close" (click)="bsModalRef.hide()"></button>
-</div>
-
-<div class="modal-body">
+<!-- project-modal.component.html -->
+<div class="modal-body d-flex flex-column">
+    <div class="modal-header" style="border: none">
+        <button class="btn-close" (click)="bsModalRef.hide()"></button>
+    </div>
     <carousel>
         <div *ngFor="let picture of project.pictures">
-            <slide><img src={{picture}} alt="slide" style="display: block; width: 100%; max-height: 300px"></slide>
+            <slide><img src={{picture}} alt="slide" style="display: block; width: 100%; margin-left: 1.5rem; max-width: 46.9rem; max-height: 20rem;"></slide>
         </div>
     </carousel>
-
-    <h3 class="mt-2">{{'modalDescription' | translate}}</h3>
-    <p>{{project.description | translate}}</p>
-    <p>{{'modalLink' | translate}} <a href={{project.projectLink}} target="_blank">{{'modalHere' | translate}}</a></p>
-
-    <hr>
-    <div class="d-flex flex-wrap justify-content-center">
-        <div *ngFor="let tag of project.tags">
-            <div class="tag me-2 mb-1" [style.background-color]="tag.color">
-                <img src="{{tag.iconPath}}" alt="{{tag.toString()}} Icon" class="tag-icon">
-                {{tag}}
-            </div>
-        </div>
+    <h2 class="mt-3 mb-4 m-name">{{project.name}}</h2>
+    <p class="m-name m-subname">{{project.description | translate}}</p>
+    <div class="d-flex justify-content-end mb-4">
+        <a class="button-decarion" href="{{project.projectLink}}" target="_blank">
+            <button class="cssbuttons-io-button"> GitHub
+                <div class="icon">
+                    <img style="height: 24px; width: 24px;" src="../../assets/github.png" alt="">
+                </div>
+            </button>
+        </a>
+        <a class="button-decarion" href="{{project.projectLink}}" target="_blank">
+            <button class="cssbuttons-io-button"> Preview
+                <div class="icon">
+                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path>
+                    </svg>
+                </div>
+            </button>
+        </a>
     </div>
 </div>

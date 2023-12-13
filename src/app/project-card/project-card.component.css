@@ -1,50 +1,188 @@
-.card-sub{
-    color: #939393;
-    font-size: 15px;
-    text-align: left !important;
-}
-button {
-    display: inline-block;
-    border-radius: 4px;
-    background-color: #81a5f8;
-    border: none;
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 15px;
-    padding: 12px;
-    width: 120px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 5px;
-   }
-   
-   button span {
-    cursor: pointer;
-    display: inline-block;
+.card {
     position: relative;
-    transition: 0.5s;
-   }
-   
-   button span:after {
-    content: '»';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    height: 25rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 32px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    background-color: #f6f6f6;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    color: #e8e8e8;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .content .heading {
+    font-weight: 700;
+    font-size: 32px;
+    color: #212121 ;
+    z-index: 1;
+    height: 7rem;
+  }
+  
+  .content .para {
+    line-height: 1.5;
+    color: #54585f;
+    font-size: 17px;
+    z-index: 1;
+    height: 4rem;
+  }
+  
+  .content .btn {
+    color: #e8e8e8;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(-45deg, #88f3ff 0%, #766dff 100% );
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .card::before {
+    content: "";
     position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -15px;
-    transition: 0.5s;
-   }
-   
-   button:hover span {
-    padding-right: 15px;
-   }
-   
-   button:hover span:after {
-    opacity: 1;
-    right: 0;
-   }
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(-45deg, #88f3ff 0%, #766dff 100% );
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .card:hover::before {
+    height: 100%;
+  }
+  
+  .card:hover {
+    box-shadow: none;
+  }
+  
+  .card:hover .btn {
+    color: #212121;
+    background: #e8e8e8;
+  }
+  
+  .content .btn:hover {
+    outline: 2px solid #e8e8e8;
+    background: transparent;
+    color: #e8e8e8;
+  }
+  
+  .content .btn:active {
+    box-shadow: none;
+  }
+  
 
-   .tag-icon {
-    width: 20px;  /* Ajuste conforme necessário */
-    height: 20px; /* Ajuste conforme necessário */
-    margin-right: 5px;  /* Espaçamento entre o ícone e o texto da tag */
+.tag-tec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #54585F;
+    transition: background-color 0.5s; 
+    width: 40px;
+    position: relative;
 }
+
+.tag-icon {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 5px;
+}
+
+.tag-icon:hover {
+    transform: scale(1.28);
+    transition: 0.2s;
+}
+
+ .tooltip-social {
+  background: #262626;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  padding: 0.5rem 0.4rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -90%);
+  transition: all 0.2s ease;
+  z-index: 1;
+  color: #f6f6f6;
+  
+
+}
+.tooltip-social :after {
+  content: " ";
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  border: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: transparent;
+  transform: translate(-50%, 100%);
+}
+
+
+.tag-tec:hover .tooltip-social {
+    display: block;
+    opacity: 1;
+}
+.tag-icon:hover .tag-tec .tooltip-social {
+  opacity: 1;
+  transform: translate(-50%, -130%);
+}
+
+.tooltip-social {
+  background: #262626;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  padding: 0.5rem 0.4rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -90%);
+  transition: all 0.2s ease;
+  z-index: 1;
+}
+
+.tooltip-social:after {
+  content: " ";
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  border: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: transparent;
+  transform: translate(-50%, 100%);
+}
+
+.tag-tec a .tooltip-social:after {
+  border-top-color: #262626;
+}
+
+.tag-tec a:hover .tooltip-social {
+  opacity: 1;
+  transform: translate(-50%, -130%);
+}
+

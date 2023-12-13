@@ -1,6 +1,7 @@
 .nav-hover:hover {
     color: #81a5f8 !important;
     transform: scale(1.08);
+    transition: 0.2s;
     
 }
 .selected{
