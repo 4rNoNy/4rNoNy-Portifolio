@@ -1,7 +1,23 @@
 accordion-group::ng-deep .btn-link {
-    color: white;
+    color: #81a5f8;
+    
 }
 
 accordion-group::ng-deep .card-header {
-    background-color: #007bff;
+    background-color: #f6f6f6;
+}
+.btn-pdf{
+    background-color: #f6f6f6; 
+    color: #81a5f8;
+    transition: 0.2s;
+}
+.btn-pdf:hover {
+    background: linear-gradient(-45deg, #88f3ff 0%, #766dff 100% );
+    color: white;
+    transition:  0.3s ;
+    border: none !important;
+   }
+.btn-pdf:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
 }

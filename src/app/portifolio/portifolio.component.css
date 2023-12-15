@@ -15,12 +15,12 @@ button {
     color: white;
     box-shadow: 0 0.2rem #dfd9d9;
     transform: translateY(0.2rem);
-   }
-   
-   button:hover:not(:disabled) {
+}
+
+button:hover:not(:disabled) {
     background: linear-gradient(-45deg, #88f3ff 0%, #766dff 100% );
     color: white;
-    text-shadow: 0 0.1rem #bcb4b4;
+    transition:  0.5s cubic-bezier(0.23, 1, 0.320, 1);
    }
    
    button:disabled {

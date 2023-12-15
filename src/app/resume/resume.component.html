@@ -1,5 +1,8 @@
 <div class="container text-center">
-    <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border">{{'resumeBtnDownload' | translate}}</button>
+    <div class="mb-5 mt-1" style="height: 3rem;">
+        
+        <button (click)="DownloadFile()" class="btn btn-pdf shadow">{{'resumeBtnDownload' | translate}}</button>
+    </div>
 
     <div class="pb-2">
 
@@ -11,8 +14,8 @@
 
                     <div style="width: 10.95px;">
 
-                        <div *ngIf="!isWorkExperienceOpen" style="color: white;">></div>
-                        <div *ngIf="isWorkExperienceOpen"  style="color: white;">v</div>
+                        <div *ngIf="!isWorkExperienceOpen" style="color: #81a5f8;">></div>
+                        <div *ngIf="isWorkExperienceOpen"  style="color: #81a5f8;">v</div>
                     </div>
                 </button>
 
@@ -39,8 +42,8 @@
 
                     <div style="width: 10.95px;">
 
-                        <div *ngIf="!isEducationOpen" style="color: white;">></div>
-                        <div *ngIf="isEducationOpen"  style="color: white;">v</div>
+                        <div *ngIf="!isEducationOpen" style="color: #81a5f8;">></div>
+                        <div *ngIf="isEducationOpen"  style="color: #81a5f8;">v</div>
                     </div>
                 </button>
 
@@ -63,8 +66,8 @@
 
                     <div style="width: 10.95px;">
 
-                        <div *ngIf="!isCertificationsOpen" style="color: white;">></div>
-                        <div *ngIf="isCertificationsOpen"  style="color: white;">v</div>
+                        <div *ngIf="!isCertificationsOpen" style="color: #81a5f8;">></div>
+                        <div *ngIf="isCertificationsOpen"  style="color: #81a5f8;">v</div>
                     </div>
                 </button>
 
@@ -96,8 +99,8 @@
 
                     <div style="width: 10.95px;">
 
-                        <div *ngIf="!isSkillsOpen" style="color: white;">></div>
-                        <div *ngIf="isSkillsOpen"  style="color: white;">v</div>
+                        <div *ngIf="!isSkillsOpen" style="color: #81a5f8;">></div>
+                        <div *ngIf="isSkillsOpen"  style="color: #81a5f8;">v</div>
                     </div>
                 </button>
 

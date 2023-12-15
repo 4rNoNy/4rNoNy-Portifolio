@@ -11,4 +11,11 @@ export class ContactComponent {
     this.titleService.setTitle('Arnon Nascimento - Contact')
 
   }
+  openDiscordConversation(): void {
+    const username: string = "4rNoNy";
+    const discriminator: string = "1834";
+    const discordURI: string = `discord://send?to=${username}#${discriminator}`;
+
+    window.location.href = discordURI;
+  }
 }
