@@ -9,7 +9,7 @@
   padding: 32px;
   overflow: hidden;
   border-radius: 10px;
-  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
   background-color: #f6f6f6;
 }
 
@@ -19,7 +19,7 @@
   align-items: flex-start;
   gap: 20px;
   color: #e8e8e8;
-  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .content .heading,
@@ -53,7 +53,7 @@
 
 .content .btn {
   background: linear-gradient(-45deg, #88f3ff 0%, #766dff 100%);
-  transition: background 0.9s cubic-bezier(0.23, 1, 0.320, 1);
+  transition: background 0.9s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .card::before {
@@ -64,7 +64,7 @@
   width: 100%;
   height: 5px;
   background: linear-gradient(-45deg, #88f3ff 0%, #766dff 100%);
-  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .card:hover::before {
@@ -83,10 +83,6 @@
 .content .btn:hover {
   outline: 2px solid #e8e8e8;
   background: transparent;
-}
-
-.content .btn:active {
-  box-shadow: none;
 }
 
 .tag-tec {
@@ -141,12 +137,9 @@
   transform: translate(-50%, 100%);
 }
 
-.tag-tec:hover .tooltip-social {
-  display: block;
-  opacity: 1;
-}
-
+.tag-tec:hover .tooltip-social,
 .tag-icon:hover .tag-tec .tooltip-social {
+  display: block;
   opacity: 1;
   transform: translate(-50%, -130%);
 }
