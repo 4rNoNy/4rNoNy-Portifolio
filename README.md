@@ -1,4 +1,7 @@
 # AngularPortifolio
+site rodando em tempo real :
+https://4rnony.netlify.app/
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
 
