@@ -23,7 +23,7 @@
 .icon {
     filter: grayscale(100%) invert(100%);
 }
-.icon:hover {
+.form-control:hover {
     transform: scale(1.18);
     transition: 0.2s;
 }
