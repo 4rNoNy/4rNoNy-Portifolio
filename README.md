@@ -1,30 +1,29 @@
-# AngularPortifolio
-site rodando em tempo real :
-https://4rnony.netlify.app/
+# Portfólio Pessoal
+
+Bem-vindo ao repositório do meu portfólio pessoal! Este projeto foi desenvolvido utilizando Angular e hospedado no Netlify. Aqui você encontrará informações sobre mim, meus projetos, meu currículo e como entrar em contato comigo. Além disso, o site possui a funcionalidade de tradução para português, inglês e espanhol.
 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
+## Acesso ao Site
 
-## Development server
+Você pode acessar o site do meu portfólio através do seguinte link: [Portfólio Pessoal](https://4rnony.netlify.app/)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Funcionalidades
 
-## Code scaffolding
+- **Página Inicial:** Apresenta informações sobre mim e minha área de atuação.
+- **Projetos:** Exibe uma lista dos projetos que desenvolvi, proporcionando uma visão geral de minhas habilidades e experiências.
+- **Currículo:** Oferece a opção de fazer o download do meu currículo.
+- **Contato:** Disponibiliza meus dados de contato para facilitar a comunicação.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Tecnologias Utilizadas
 
-## Build
+- **Angular:** Framework utilizado para o desenvolvimento do site.
+- **ngx-translate:** Biblioteca utilizada para a implementação da funcionalidade de tradução.
+- **Netlify:** Plataforma utilizada para hospedar o site.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Como Contribuir
 
-## Running unit tests
+Se você identificar algum problema, ou quiser contribuir com melhorias, fique à vontade para abrir uma issue ou enviar um pull request. Sua contribuição será muito bem-vinda!
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Autor
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Este projeto foi desenvolvido por 4rNoNy.
